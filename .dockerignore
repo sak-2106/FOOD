@@ -1,0 +1,8 @@
+backend/.env
+backend/venv/
+**/__pycache__/
+*.pyc
+backend/enrich_cache.db
+backend/uploads/*
+.git
+.vscode

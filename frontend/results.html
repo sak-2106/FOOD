@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#17231d">
+<title>FoodLens — Scan result</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#view-results">Skip to results</a>
+
+<!-- animated background -->
+<div class="bg-frame" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+  <span class="blob blob-d"></span>
+  <div class="produce" id="produceLayer"></div>
+</div>
+
+<div class="app">
+
+  <section id="mainApp" class="main-app">
+
+    <nav class="navbar">
+      <button class="brand brand-btn" id="brandHome" type="button">
+        <span class="lens-mark small" aria-hidden="true">
+          <span class="lens-corner tl"></span>
+          <span class="lens-corner tr"></span>
+          <span class="lens-corner bl"></span>
+          <span class="lens-corner br"></span>
+          <span class="lens-dot"></span>
+        </span>
+        <span class="brand-name">FoodLens</span>
+      </button>
+      <div class="nav-right">
+        <span class="user-pill" id="userPill">—</span>
+        <button class="btn-ghost" id="logoutBtn">Log out</button>
+      </div>
+    </nav>
+
+    <main class="container view" id="view-results" data-page="summary" tabindex="-1">
+
+      <div class="results-bar">
+        <button class="back-link" id="backToDashFromResults" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Dashboard
+        </button>
+        <div class="results-actions">
+          <button class="btn-share" id="shareBtn" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 15V4m0 0L8 8m4-4 4 4M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span id="shareBtnLabel">Share</span>
+          </button>
+          <button class="btn-primary btn-inline" id="scanAnotherBtn" type="button">Scan another</button>
+        </div>
+      </div>
+
+      <div class="results-head" id="resultsHead">
+        <p class="eyebrow" id="resultEyebrow">Scan result</p>
+        <h1 id="resultTitle">Here's what's in it</h1>
+      </div>
+
+      <div id="dockSentinel" aria-hidden="true" style="height:1px"></div>
+      <div class="tabs-dock" id="tabsDock">
+        <div class="page-tabs" role="tablist" aria-label="Result sections" id="resultTabs">
+          <button class="page-tab active" data-page="summary" role="tab" id="tab-summary" aria-controls="page-summary" aria-selected="true">
+            <span aria-hidden="true">🍽️</span> Summary
+          </button>
+          <button class="page-tab" data-page="nutrition" role="tab" id="tab-nutrition" aria-controls="page-nutrition" aria-selected="false" tabindex="-1">
+            <span aria-hidden="true">📊</span> Nutrition
+          </button>
+          <button class="page-tab" data-page="ingredients" role="tab" id="tab-ingredients" aria-controls="page-ingredients" aria-selected="false" tabindex="-1">
+            <span aria-hidden="true">🧾</span> Ingredients
+          </button>
+          <button class="page-tab" data-page="vitamins" role="tab" id="vitaminsTab" aria-controls="page-vitamins" aria-selected="false" tabindex="-1" hidden>
+            <span aria-hidden="true">💊</span> Vitamins
+          </button>
+          <span class="page-tab-indicator" id="pageTabIndicator" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="result-pages" id="resultPages">
+        <div class="result-page active" data-page="summary" id="page-summary" role="tabpanel" aria-labelledby="tab-summary" tabindex="0">
+          <!-- placeholder shown until results.js fills this in -->
+          <div class="skel skel-card" aria-hidden="true"></div>
+        </div>
+        <div class="result-page" data-page="nutrition" id="page-nutrition" role="tabpanel" aria-labelledby="tab-nutrition" tabindex="0"></div>
+        <div class="result-page" data-page="ingredients" id="page-ingredients" role="tabpanel" aria-labelledby="tab-ingredients" tabindex="0"></div>
+        <div class="result-page" data-page="vitamins" id="page-vitamins" role="tabpanel" aria-labelledby="vitaminsTab" tabindex="0"></div>
+      </div>
+
+    </main>
+
+  </section>
+
+</div>
+
+<dialog class="share-dialog" id="shareDialog" aria-labelledby="shareDialogTitle">
+  <div class="share-inner">
+    <div class="share-title">
+      <h2 id="shareDialogTitle">Share this result</h2>
+      <button class="icon-btn" id="shareClose" type="button" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <img class="share-preview" id="sharePreview" alt="Preview of the result card you can share">
+    <div class="share-actions">
+      <a class="btn-primary" id="shareDownload" download="foodlens-result.png">Save image</a>
+      <button class="btn-secondary" id="shareBtnAction" type="button" aria-haspopup="true" aria-expanded="false">Share</button>
+    </div>
+    <div class="share-menu" id="shareMenu" hidden>
+      <button class="share-menu-item" id="shareToWhatsapp" type="button">
+        <span class="share-menu-icon" aria-hidden="true">💬</span> WhatsApp
+      </button>
+      <button class="share-menu-item" id="shareToTwitter" type="button">
+        <span class="share-menu-icon" aria-hidden="true">✖️</span> X (Twitter)
+      </button>
+      <button class="share-menu-item" id="shareToEmail" type="button">
+        <span class="share-menu-icon" aria-hidden="true">✉️</span> Email
+      </button>
+      <button class="share-menu-item" id="shareCopyImageItem" type="button">
+        <span class="share-menu-icon" aria-hidden="true">🖼️</span> Copy image
+      </button>
+      <button class="share-menu-item" id="shareCopyLinkItem" type="button">
+        <span class="share-menu-icon" aria-hidden="true">🔗</span> Copy link
+      </button>
+      <p class="share-menu-note">WhatsApp, X and Email send the score and a link — attach the saved image yourself for the picture.</p>
+    </div>
+    <p class="share-note">The card shows the product, score and headline numbers. It doesn't include your name or account.</p>
+  </div>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script src="common.js"></script>
+<script src="results.js"></script>
+</body>
+</html>

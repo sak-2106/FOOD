@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#17231d">
+<title>FoodLens — Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#view-dashboard">Skip to dashboard</a>
+
+<!-- animated background -->
+<div class="bg-frame" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+  <span class="blob blob-d"></span>
+  <div class="produce" id="produceLayer"></div>
+</div>
+
+<div class="app">
+
+  <section id="mainApp" class="main-app">
+
+    <nav class="navbar">
+      <button class="brand brand-btn" id="brandHome" type="button">
+        <span class="lens-mark small" aria-hidden="true">
+          <span class="lens-corner tl"></span>
+          <span class="lens-corner tr"></span>
+          <span class="lens-corner bl"></span>
+          <span class="lens-corner br"></span>
+          <span class="lens-dot"></span>
+        </span>
+        <span class="brand-name">FoodLens</span>
+      </button>
+      <div class="nav-right">
+        <span class="user-pill" id="userPill">—</span>
+        <button class="btn-ghost" id="logoutBtn">Log out</button>
+      </div>
+    </nav>
+
+    <main class="container view" id="view-dashboard" tabindex="-1">
+
+      <div class="dash-hero">
+        <div class="dash-hero-text">
+          <p class="eyebrow">Dashboard</p>
+          <h1 id="dashGreeting">Welcome back 🥗</h1>
+          <p class="dash-sub">Scan a package to see past the marketing on the front of the box.</p>
+        </div>
+        <button class="scan-cta" id="startScanBtn" type="button">
+          <span class="scan-cta-ring" aria-hidden="true"></span>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <path d="M4 16V8a2 2 0 0 1 2-2h2l1.5-2h5L16 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" stroke="currentColor" stroke-width="1.7"/>
+            <circle cx="12" cy="12.5" r="3.2" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+          <span>Start new scan</span>
+        </button>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <span class="stat-icon icon-scans" aria-hidden="true">🔍</span>
+          <div>
+            <div class="stat-value" id="statScans" data-count="0">0</div>
+            <div class="stat-label">Labels scanned</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon icon-score" aria-hidden="true">🥑</span>
+          <div class="stat-body">
+            <div class="stat-value" id="statAvg" data-count="0">0</div>
+            <div class="stat-label">Average score</div>
+          </div>
+          <div class="stat-spark" id="statSpark"></div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon icon-flag" aria-hidden="true">⚠️</span>
+          <div>
+            <div class="stat-value" id="statFlags" data-count="0">0</div>
+            <div class="stat-label">Things worth a look</div>
+          </div>
+        </div>
+        <div class="stat-card" id="streakCard">
+          <span class="stat-icon icon-streak" id="streakIcon" aria-hidden="true">🔥</span>
+          <div>
+            <div class="stat-value" id="statStreak" data-count="0">0</div>
+            <div class="stat-label" id="streakLabel">Day streak</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <h2>Recent scans</h2>
+        <span class="section-note">Tap one to reopen it</span>
+      </div>
+
+      <div class="history-tools" id="historyTools" hidden>
+        <label class="history-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="sr-only">Search your scans</span>
+          <input type="search" id="historySearch" placeholder="Search scans, e.g. biscuit, oats" autocomplete="off">
+        </label>
+        <div class="filter-chips" id="filterChips" role="group" aria-label="Filter by score"></div>
+      </div>
+
+      <p class="sr-only" id="historyStatus" role="status"></p>
+
+      <div id="historyGroups">
+        <div class="history-group" id="historyGroup-upload">
+          <div class="section-title history-subtitle">
+            <h3>📁 Uploaded photos</h3>
+            <span class="history-count" id="historyCount-upload"></span>
+          </div>
+          <div id="historyList-upload" class="history-list">
+            <div class="skel skel-row" aria-hidden="true"></div>
+            <div class="skel skel-row" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="history-group" id="historyGroup-camera">
+          <div class="section-title history-subtitle">
+            <h3>📷 Scanned with camera</h3>
+            <span class="history-count" id="historyCount-camera"></span>
+          </div>
+          <div id="historyList-camera" class="history-list">
+            <div class="skel skel-row" aria-hidden="true"></div>
+            <div class="skel skel-row" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </section>
+
+</div>
+
+<dialog class="share-dialog rename-dialog" id="renameDialog" aria-labelledby="renameTitle">
+  <div class="share-inner">
+    <div class="share-title">
+      <h2 id="renameTitle">Rename scan</h2>
+      <button class="icon-btn" id="renameClose" type="button" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="field" style="margin-bottom:0">
+      <label for="renameInput">Name</label>
+      <input type="text" id="renameInput" maxlength="80" autocomplete="off" placeholder="e.g. Oats from the corner shop">
+    </div>
+    <p class="share-note" id="renameError" role="alert" hidden></p>
+    <div class="share-actions">
+      <button class="btn-primary" id="renameSave" type="button">Save</button>
+      <button class="btn-secondary" id="renameCancel" type="button">Cancel</button>
+    </div>
+  </div>
+</dialog>
+
+<script src="common.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

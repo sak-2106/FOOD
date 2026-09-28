@@ -1,0 +1,1069 @@
+{
+  "sugar": {
+    "label": "Sugar",
+    "category": "Sweetener",
+    "aliases": [
+      "sucrose",
+      "cane sugar",
+      "table sugar"
+    ],
+    "what": "Sugar is a simple carbohydrate used mainly to provide sweetness and energy.",
+    "why_used": "It is added to foods to provide sweetness, improve flavour and contribute to texture.",
+    "health": "Sugar provides energy but relatively little micronutritional value. High intake of free or added sugars can increase overall calorie intake.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "high fructose corn syrup": {
+    "label": "High Fructose Corn Syrup",
+    "category": "Sweetener",
+    "aliases": [
+      "hfcs"
+    ],
+    "what": "High fructose corn syrup is a liquid sweetener made from corn-derived glucose and fructose.",
+    "why_used": "It provides sweetness and helps contribute to the texture and moisture of processed foods.",
+    "health": "It is a source of added sugar. Its nutritional significance depends mainly on the total amount consumed.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "glucose syrup": {
+    "label": "Glucose Syrup",
+    "category": "Sweetener",
+    "aliases": [
+      "corn syrup"
+    ],
+    "what": "Glucose syrup is a carbohydrate syrup containing glucose and other sugars.",
+    "why_used": "It provides sweetness and can improve texture and consistency.",
+    "health": "It contributes carbohydrate and calories and is considered a source of added sugar.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "fructose": {
+    "label": "Fructose",
+    "category": "Sweetener",
+    "aliases": [],
+    "what": "Fructose is a naturally occurring simple sugar found in fruits and other foods.",
+    "why_used": "It is used as a sweetening ingredient.",
+    "health": "Fructose contributes energy. Its effect depends on the total amount consumed and the food source.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "dextrose": {
+    "label": "Dextrose",
+    "category": "Sweetener",
+    "aliases": [
+      "glucose"
+    ],
+    "what": "Dextrose is another name commonly used for glucose.",
+    "why_used": "It can provide sweetness, carbohydrate and browning during cooking.",
+    "health": "It contributes carbohydrate and energy and is generally treated as an added sugar when added to foods.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "maltodextrin": {
+    "label": "Maltodextrin",
+    "category": "Carbohydrate / Food additive",
+    "aliases": [],
+    "what": "Maltodextrin is a carbohydrate produced by breaking down starch.",
+    "why_used": "It can provide bulk, improve texture and act as a carrier for flavours or other ingredients.",
+    "health": "It is readily digestible and contributes carbohydrate and calories.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "wheat flour": {
+    "label": "Wheat Flour",
+    "category": "Grain / Flour",
+    "aliases": [
+      "wheat flour atta",
+      "atta",
+      "wheat atta"
+    ],
+    "what": "Wheat flour is flour produced by milling wheat grains.",
+    "why_used": "It provides structure, texture and carbohydrates in baked and cereal-based foods.",
+    "health": "Whole-wheat flour generally contains more fibre and micronutrients than highly refined flour.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "whole oats flour": {
+    "label": "Whole Oats Flour",
+    "category": "Whole Grain",
+    "aliases": [
+      "oat flour",
+      "whole oat flour",
+      "oats flour"
+    ],
+    "what": "Whole oats flour is produced from whole oat grains and contains the grain's main components.",
+    "why_used": "It contributes grain flavour, texture, carbohydrates and dietary fibre.",
+    "health": "Oats provide dietary fibre and nutrients; whole oats contain beta-glucan, a soluble fibre.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "corn meal": {
+    "label": "Corn Meal",
+    "category": "Grain",
+    "aliases": [
+      "maize meal",
+      "corn flour"
+    ],
+    "what": "Corn meal is ground maize used as a cereal-based ingredient.",
+    "why_used": "It contributes texture, flavour and carbohydrates.",
+    "health": "Corn provides carbohydrate and can contribute fibre and micronutrients depending on processing.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "palm oil": {
+    "label": "Palm Oil",
+    "category": "Fat / Oil",
+    "aliases": [],
+    "what": "Palm oil is a vegetable oil obtained from the fruit of oil palms.",
+    "why_used": "It contributes fat, texture, mouthfeel and stability to processed foods.",
+    "health": "Palm oil contains a substantial proportion of saturated fat, so the amount consumed contributes to total saturated-fat intake.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "sunflower oil": {
+    "label": "Sunflower Oil",
+    "category": "Vegetable Oil",
+    "aliases": [],
+    "what": "Sunflower oil is a vegetable oil extracted from sunflower seeds.",
+    "why_used": "It is used as a cooking and formulation oil and contributes texture and mouthfeel.",
+    "health": "Its nutritional profile depends on the type of sunflower oil; it generally contains mostly unsaturated fat.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "milk": {
+    "label": "Milk",
+    "category": "Allergen",
+    "aliases": [
+      "milk solids",
+      "dairy"
+    ],
+    "what": "Milk is a dairy ingredient that can provide protein, fat, lactose and minerals.",
+    "why_used": "Milk ingredients can contribute flavour, texture, protein and nutritional components.",
+    "health": "Milk provides nutrients such as protein and calcium, but milk is a major food allergen for susceptible individuals.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "soy": {
+    "label": "Soy",
+    "category": "Allergen",
+    "aliases": [
+      "soya",
+      "soybean"
+    ],
+    "what": "Soy is a legume commonly used as a source of protein and as a food ingredient.",
+    "why_used": "Soy-derived ingredients can provide protein, emulsification, texture or flavour depending on the ingredient.",
+    "health": "Soy provides protein and other nutrients, but it is a major allergen for susceptible individuals.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "peanuts": {
+    "label": "Peanuts",
+    "category": "Allergen",
+    "aliases": [
+      "peanut"
+    ],
+    "what": "Peanuts are legumes containing protein and fat.",
+    "why_used": "Peanuts and peanut-derived ingredients can provide flavour, texture and fat.",
+    "health": "Peanuts provide protein and unsaturated fats, but they are a major allergen and can cause severe reactions in susceptible people.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "wheat": {
+    "label": "Wheat",
+    "category": "Allergen",
+    "aliases": [],
+    "what": "Wheat is a cereal grain containing carbohydrates and proteins including gluten proteins.",
+    "why_used": "Wheat ingredients provide structure, texture and carbohydrates in many foods.",
+    "health": "Wheat is nutritious for many people, but it contains gluten and is relevant to people with wheat allergy or gluten-related disorders.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "lecithin": {
+    "label": "Lecithin (INS 322)",
+    "category": "Emulsifier",
+    "code": "322",
+    "codes": [
+      "322",
+      "322i"
+    ],
+    "aliases": [
+      "ins 322",
+      "ins 322i",
+      "e322",
+      "e322i"
+    ],
+    "what": "Lecithin is a mixture of phospholipids used as an emulsifier.",
+    "why_used": "It helps ingredients such as water and oil remain evenly mixed and can improve texture and processing.",
+    "health": "Lecithin is widely used as a food emulsifier. The source may be relevant for people with particular allergies.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "mixed tocopherols": {
+    "label": "Mixed Tocopherols (INS 307b)",
+    "category": "Antioxidant",
+    "code": "307b",
+    "codes": [
+      "307b"
+    ],
+    "aliases": [
+      "ins 307b",
+      "e307b",
+      "tocopherols",
+      "mixed tocopherol"
+    ],
+    "what": "Mixed tocopherols are forms of vitamin E compounds that have antioxidant properties.",
+    "why_used": "They are used to slow oxidation of fats and oils and help maintain product quality and shelf life.",
+    "health": "Tocopherols are vitamin E-related compounds. Their nutritional and technological roles depend on the specific tocopherol and amount present.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "tocopherols": {
+    "label": "Tocopherols (INS 307b)",
+    "category": "Antioxidant",
+    "code": "307b",
+    "codes": [
+      "307b"
+    ],
+    "aliases": [
+      "ins 307b",
+      "mixed tocopherols"
+    ],
+    "what": "Tocopherols are vitamin E-related compounds with antioxidant activity.",
+    "why_used": "They help protect fats and oils from oxidation.",
+    "health": "Tocopherols are related to vitamin E and are commonly used in foods as antioxidants.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "monosodium glutamate": {
+    "label": "MSG (INS 621)",
+    "category": "Flavour Enhancer",
+    "code": "621",
+    "codes": [
+      "621"
+    ],
+    "aliases": [
+      "msg",
+      "ins 621",
+      "e621"
+    ],
+    "what": "Monosodium glutamate is the sodium salt of glutamic acid and is used as a flavour enhancer.",
+    "why_used": "It enhances savoury and umami flavours.",
+    "health": "MSG is permitted as a food additive in regulated amounts. Some individuals report sensitivity to large amounts.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "sodium benzoate": {
+    "label": "Sodium Benzoate (INS 211)",
+    "category": "Preservative",
+    "code": "211",
+    "codes": [
+      "211"
+    ],
+    "aliases": [
+      "ins 211",
+      "e211"
+    ],
+    "what": "Sodium benzoate is a preservative derived from benzoic acid.",
+    "why_used": "It helps inhibit the growth of certain microorganisms and extends shelf life.",
+    "health": "It is widely used as a preservative within regulated limits.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "potassium sorbate": {
+    "label": "Potassium Sorbate (INS 202)",
+    "category": "Preservative",
+    "code": "202",
+    "codes": [
+      "202"
+    ],
+    "aliases": [
+      "ins 202",
+      "e202"
+    ],
+    "what": "Potassium sorbate is the potassium salt of sorbic acid.",
+    "why_used": "It helps prevent the growth of moulds and yeasts.",
+    "health": "It is widely used as a preservative within regulated limits.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "citric acid": {
+    "label": "Citric Acid (INS 330)",
+    "category": "Acidity Regulator",
+    "code": "330",
+    "codes": [
+      "330"
+    ],
+    "aliases": [
+      "ins 330",
+      "e330"
+    ],
+    "what": "Citric acid is an organic acid naturally found in citrus fruits.",
+    "why_used": "It is used to provide acidity, balance flavour and help control product pH.",
+    "health": "Citric acid is commonly used in foods as an acidity regulator.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "ascorbic acid": {
+    "label": "Ascorbic Acid (Vitamin C, INS 300)",
+    "category": "Antioxidant",
+    "code": "300",
+    "codes": [
+      "300"
+    ],
+    "aliases": [
+      "vitamin c",
+      "ins 300",
+      "e300"
+    ],
+    "what": "Ascorbic acid is vitamin C and can also act as an antioxidant in foods.",
+    "why_used": "It can help protect food from oxidation and may also be used for nutritional fortification.",
+    "health": "Vitamin C is an essential nutrient involved in normal immune function, collagen formation and antioxidant activity.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "sodium bicarbonate": {
+    "label": "Sodium Bicarbonate (INS 500)",
+    "category": "Raising Agent",
+    "code": "500",
+    "codes": [
+      "500"
+    ],
+    "aliases": [
+      "baking soda",
+      "ins 500",
+      "e500"
+    ],
+    "what": "Sodium bicarbonate is a chemical leavening agent commonly known as baking soda.",
+    "why_used": "It releases carbon dioxide under suitable conditions, helping baked foods rise.",
+    "health": "It contributes sodium to the food. Its significance depends on the amount used.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "caramel": {
+    "label": "Caramel Colour (INS 150)",
+    "category": "Colour",
+    "code": "150",
+    "codes": [
+      "150"
+    ],
+    "aliases": [
+      "caramel color",
+      "caramel colour",
+      "ins 150",
+      "e150"
+    ],
+    "what": "Caramel colour is a brown colouring substance produced by controlled heating of carbohydrates.",
+    "why_used": "It is used to give foods a characteristic brown colour.",
+    "health": "Different caramel colour classes have different specifications and permitted uses.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "tartrazine": {
+    "label": "Tartrazine (INS 102)",
+    "category": "Colour",
+    "code": "102",
+    "codes": [
+      "102"
+    ],
+    "aliases": [
+      "ins 102",
+      "e102"
+    ],
+    "what": "Tartrazine is a synthetic yellow food colour.",
+    "why_used": "It is used to provide or enhance yellow colour in foods.",
+    "health": "It is a regulated food colour. Certain sensitive individuals may experience reactions.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "sunset yellow": {
+    "label": "Sunset Yellow FCF (INS 110)",
+    "category": "Colour",
+    "code": "110",
+    "codes": [
+      "110"
+    ],
+    "aliases": [
+      "sunset yellow fcf",
+      "ins 110",
+      "e110"
+    ],
+    "what": "Sunset Yellow FCF is a synthetic orange-yellow food colour.",
+    "why_used": "It is used to give foods an orange or yellow appearance.",
+    "health": "It is a regulated food colour. Some individuals may be sensitive to certain food colours.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "allura red": {
+    "label": "Allura Red AC (INS 129)",
+    "category": "Colour",
+    "code": "129",
+    "codes": [
+      "129"
+    ],
+    "aliases": [
+      "red 40",
+      "allura red ac",
+      "ins 129",
+      "e129"
+    ],
+    "what": "Allura Red AC is a synthetic red food colour.",
+    "why_used": "It is used to provide a red colour to foods and beverages.",
+    "health": "It is a regulated food colour. Responses to food colours can vary between individuals.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "disodium inosinate": {
+    "label": "Disodium Inosinate (INS 631)",
+    "category": "Flavour Enhancer",
+    "code": "631",
+    "codes": [
+      "631"
+    ],
+    "aliases": [
+      "ins 631",
+      "e631"
+    ],
+    "what": "Disodium inosinate is a flavour enhancer derived from inosine monophosphate.",
+    "why_used": "It enhances savoury and umami flavours and is often used with other flavour enhancers.",
+    "health": "It is used in regulated food applications. People following specific dietary restrictions may wish to check its source.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "disodium guanylate": {
+    "label": "Disodium Guanylate (INS 627)",
+    "category": "Flavour Enhancer",
+    "code": "627",
+    "codes": [
+      "627"
+    ],
+    "aliases": [
+      "ins 627",
+      "e627"
+    ],
+    "what": "Disodium guanylate is a flavour enhancer.",
+    "why_used": "It contributes to savoury and umami flavour.",
+    "health": "It is used as a regulated food additive. Its significance depends on the amount consumed.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "milk solids": {
+    "label": "Milk Solids",
+    "category": "Allergen",
+    "aliases": [
+      "milk powder",
+      "dried milk"
+    ],
+    "what": "Milk solids are the non-water components of milk, including proteins, lactose and minerals.",
+    "why_used": "They can provide dairy flavour, protein, texture and solids to processed foods.",
+    "health": "Milk solids provide nutrients but are relevant to people with milk allergy or lactose-related dietary concerns.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "cocoa solids": {
+    "label": "Cocoa Solids",
+    "category": "Cocoa Ingredient",
+    "aliases": [
+      "cocoa"
+    ],
+    "what": "Cocoa solids are the non-fat components of processed cocoa beans.",
+    "why_used": "They provide chocolate flavour, colour and characteristic cocoa compounds.",
+    "health": "Cocoa contains naturally occurring compounds such as polyphenols. The overall nutritional profile depends on the amount and other ingredients in the product.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "iodised salt": {
+    "label": "Iodised Salt",
+    "category": "Seasoning",
+    "aliases": [
+      "iodized salt"
+    ],
+    "what": "Iodised salt is salt fortified with iodine.",
+    "why_used": "It enhances flavour and provides iodine.",
+    "health": "Iodine is an essential nutrient needed for normal thyroid function. Salt also contributes sodium, so total intake matters.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "natural flavour": {
+    "label": "Natural Flavour",
+    "category": "Flavouring",
+    "aliases": [
+      "flavour natural",
+      "natural flavor"
+    ],
+    "what": "Natural flavour refers to flavouring substances obtained from natural source materials and used to provide flavour.",
+    "why_used": "It is used to provide or enhance the characteristic flavour of the product.",
+    "health": "The term covers many different flavouring substances, so the specific composition depends on the formulation and applicable food regulations.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "cocoa butter": {
+    "label": "Cocoa Butter",
+    "category": "Oil or fat",
+    "aliases": [],
+    "what": "Cocoa butter is the natural fat pressed out of cocoa beans, solid at room temperature and melting near body temperature.",
+    "why_used": "Gives chocolate its smooth melt and texture.",
+    "health": "A saturated fat, similar in effect to other solid vegetable fats.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "coconut oil": {
+    "label": "Coconut Oil",
+    "category": "Oil or fat",
+    "aliases": [
+      "copra oil"
+    ],
+    "what": "Coconut oil is a fat pressed from the dried flesh of coconuts, solid at room temperature.",
+    "why_used": "Adds richness and a distinct flavour, and keeps baked goods moist.",
+    "health": "Very high in saturated fat compared with most other cooking oils.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "vegetable oil": {
+    "label": "Vegetable Oil",
+    "category": "Oil or fat",
+    "aliases": [
+      "refined vegetable oil"
+    ],
+    "what": "A general term for oil pressed from one or more plant sources, such as soybean, sunflower or rapeseed.",
+    "why_used": "Used for frying, moisture and texture.",
+    "health": "The label not naming the specific plant source makes it hard to know the fat profile.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "canola oil": {
+    "label": "Canola Oil",
+    "category": "Oil or fat",
+    "aliases": [
+      "rapeseed oil"
+    ],
+    "what": "An oil pressed from rapeseed, bred to be low in the compounds that make older rapeseed oil taste bitter.",
+    "why_used": "A neutral-tasting oil used for cooking or frying.",
+    "health": "Relatively low in saturated fat compared with palm or coconut oil.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "olive oil": {
+    "label": "Olive Oil",
+    "category": "Oil or fat",
+    "aliases": [
+      "extra virgin olive oil"
+    ],
+    "what": "Oil pressed from olives.",
+    "why_used": "Adds flavour and is used for cooking or as a finishing oil.",
+    "health": "Mostly unsaturated fat, generally considered a healthier cooking oil choice.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "rice flour": {
+    "label": "Rice Flour",
+    "category": "Grain",
+    "aliases": [],
+    "what": "Flour milled from rice grains, naturally free of gluten.",
+    "why_used": "Used for texture, thickening, or as a gluten-free base.",
+    "health": "A source of carbohydrate; naturally gluten-free.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "oat flour": {
+    "label": "Oat Flour",
+    "category": "Grain",
+    "aliases": [
+      "rolled oats",
+      "oats"
+    ],
+    "what": "Oats that have been rolled, milled or ground into flour or flakes.",
+    "why_used": "Adds texture, fibre and a mild, nutty flavour.",
+    "health": "A source of dietary fibre, particularly beta-glucan.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "barley malt": {
+    "label": "Barley Malt",
+    "category": "Flavouring",
+    "aliases": [
+      "malt extract",
+      "malted barley"
+    ],
+    "what": "A syrup or powder made by sprouting and drying barley, then extracting the sugars produced.",
+    "why_used": "Adds a toasty sweetness and helps with browning.",
+    "health": "Contains natural sugars and, since it comes from barley, gluten.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "cornstarch": {
+    "label": "Cornstarch",
+    "category": "Carbohydrate / Food additive",
+    "aliases": [
+      "corn starch",
+      "maize starch"
+    ],
+    "what": "A fine starch extracted from corn kernels.",
+    "why_used": "Used to thicken sauces or as an anti-caking agent between food pieces.",
+    "health": "A refined carbohydrate with little nutritional value beyond energy.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "brown sugar": {
+    "label": "Brown Sugar",
+    "category": "Sweetener",
+    "aliases": [],
+    "what": "Refined sugar with molasses added back in, giving it colour and a caramel-like flavour.",
+    "why_used": "For sweetness and a deeper flavour than white sugar.",
+    "health": "Nutritionally very similar to white sugar — still an added sugar.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "invert sugar": {
+    "label": "Invert Sugar",
+    "category": "Sweetener",
+    "aliases": [
+      "invert syrup"
+    ],
+    "what": "A liquid sugar made by splitting ordinary sugar into its two component sugars, which resists crystallising.",
+    "why_used": "Keeps baked goods and sweets soft and prevents sugar from turning grainy.",
+    "health": "An added sugar, nutritionally similar to table sugar.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "stevia": {
+    "label": "Stevia",
+    "category": "Sweetener",
+    "aliases": [
+      "steviol glycosides",
+      "ins 960"
+    ],
+    "what": "A sweetener extracted from the leaves of the stevia plant, hundreds of times sweeter than sugar by weight.",
+    "why_used": "Adds sweetness with little or no calories.",
+    "health": "A plant-derived, non-sugar sweetener; some people notice a mild bitter or liquorice-like aftertaste.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "sucralose": {
+    "label": "Sucralose",
+    "category": "Sweetener",
+    "aliases": [
+      "ins 955",
+      "splenda"
+    ],
+    "what": "An artificial sweetener made from sugar through a chemical process, roughly 600 times sweeter than sugar.",
+    "why_used": "Adds sweetness with essentially no calories.",
+    "health": "Passes through the body largely unabsorbed. Considered safe by major food regulators within set limits.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "aspartame": {
+    "label": "Aspartame",
+    "category": "Sweetener",
+    "aliases": [
+      "ins 951"
+    ],
+    "what": "An artificial sweetener made from two amino acids, around 200 times sweeter than sugar.",
+    "why_used": "Adds sweetness with almost no calories.",
+    "health": "Not suitable for people with the rare condition phenylketonuria (PKU), since it contains phenylalanine.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "sorbitol": {
+    "label": "Sorbitol",
+    "category": "Sweetener",
+    "aliases": [
+      "ins 420"
+    ],
+    "what": "A sugar alcohol, naturally found in some fruits, used as a lower-calorie sweetener.",
+    "why_used": "Adds sweetness and keeps foods moist, with fewer calories than sugar.",
+    "health": "Can have a laxative effect if eaten in large amounts.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "xylitol": {
+    "label": "Xylitol",
+    "category": "Sweetener",
+    "aliases": [
+      "ins 967"
+    ],
+    "what": "A sugar alcohol, often derived from birch or corn, roughly as sweet as sugar with fewer calories.",
+    "why_used": "Adds sweetness and is often used in sugar-free gum and mints.",
+    "health": "Can cause digestive upset in large amounts, and is toxic to dogs.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "erythritol": {
+    "label": "Erythritol",
+    "category": "Sweetener",
+    "aliases": [
+      "ins 968"
+    ],
+    "what": "A sugar alcohol that occurs naturally in small amounts in some fruits, used as a near-zero-calorie sweetener.",
+    "why_used": "Adds sweetness with minimal calories and little effect on blood sugar.",
+    "health": "Generally well tolerated, though large amounts can cause digestive discomfort in some people.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "xanthan gum": {
+    "label": "Xanthan Gum",
+    "category": "Stabiliser",
+    "aliases": [
+      "ins 415"
+    ],
+    "what": "A thickener produced by fermenting sugar with a specific bacteria, then purifying the result.",
+    "why_used": "Thickens liquids and keeps mixtures from separating, even in tiny amounts.",
+    "health": "Generally considered safe; very large amounts can have a mild laxative effect.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "guar gum": {
+    "label": "Guar Gum",
+    "category": "Stabiliser",
+    "aliases": [
+      "ins 412"
+    ],
+    "what": "A thickener made from the ground seeds of the guar bean.",
+    "why_used": "Thickens and stabilises foods, and can add a sense of fibre.",
+    "health": "A source of soluble fibre; can cause bloating if consumed in large amounts.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "pectin": {
+    "label": "Pectin",
+    "category": "Stabiliser",
+    "aliases": [
+      "ins 440"
+    ],
+    "what": "A natural thickener found in the cell walls of fruit, especially apples and citrus peel.",
+    "why_used": "Sets jams and jellies and thickens fruit-based products.",
+    "health": "A soluble fibre. Generally well tolerated.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "gelatin": {
+    "label": "Gelatin",
+    "category": "Stabiliser",
+    "aliases": [
+      "gelatine",
+      "ins 428"
+    ],
+    "what": "A protein extracted by boiling animal bones, skin or connective tissue.",
+    "why_used": "Sets liquids into a gel, used in sweets, marshmallows and some desserts.",
+    "health": "Not suitable for vegetarians or vegans, since it's made from animal tissue.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "agar agar": {
+    "label": "Agar Agar",
+    "category": "Stabiliser",
+    "aliases": [
+      "agar",
+      "ins 406"
+    ],
+    "what": "A gelling agent extracted from red seaweed, often used as a plant-based substitute for gelatin.",
+    "why_used": "Sets liquids into a gel without using animal products.",
+    "health": "A source of fibre from seaweed. Generally well tolerated.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "carrageenan": {
+    "label": "Carrageenan",
+    "category": "Stabiliser",
+    "aliases": [
+      "ins 407"
+    ],
+    "what": "A thickener extracted from red seaweed.",
+    "why_used": "Keeps dairy and plant-milk products smooth and prevents ingredients from separating.",
+    "health": "Approved by major food regulators; some people choose to avoid it as a precaution, though evidence of harm at food-use levels is limited.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "whey protein": {
+    "label": "Whey Protein",
+    "category": "Dairy",
+    "aliases": [
+      "whey protein concentrate",
+      "whey protein isolate"
+    ],
+    "what": "A protein separated from milk during cheese-making, dried into a powder.",
+    "why_used": "Boosts the protein content of a food or drink.",
+    "health": "A dairy-derived protein — not suitable for those with a milk allergy or who are vegan.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "soy protein": {
+    "label": "Soy Protein",
+    "category": "Allergen",
+    "aliases": [
+      "soya protein",
+      "textured vegetable protein",
+      "tvp"
+    ],
+    "what": "Protein extracted or textured from soybeans, used as a meat substitute or protein booster.",
+    "why_used": "Adds protein and can mimic the texture of meat in vegetarian products.",
+    "health": "A common allergen. A complete plant protein otherwise.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "hydrolyzed vegetable protein": {
+    "label": "Hydrolyzed Vegetable Protein",
+    "category": "Flavor enhancer",
+    "aliases": [
+      "hvp",
+      "hydrolysed vegetable protein"
+    ],
+    "what": "Plant protein broken down chemically into its component amino acids, which include natural glutamate.",
+    "why_used": "Adds a strong savoury, meaty flavour to processed foods.",
+    "health": "Naturally high in glutamate, similar in effect to added MSG.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "yeast extract": {
+    "label": "Yeast Extract",
+    "category": "Flavor enhancer",
+    "aliases": [],
+    "what": "A savoury paste or powder made by breaking down yeast cells, naturally rich in glutamate.",
+    "why_used": "Adds a strong savoury flavour, similar to the effect of added MSG.",
+    "health": "Naturally contains glutamate. Some brands are also a source of B vitamins.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "gum arabic": {
+    "label": "Gum Arabic",
+    "category": "Stabiliser",
+    "aliases": [
+      "ins 414",
+      "acacia gum"
+    ],
+    "what": "A gum harvested from the sap of acacia trees.",
+    "why_used": "Stabilises foams and prevents sugar from crystallising in sweets and drinks.",
+    "health": "A soluble fibre, generally well tolerated.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "bha": {
+    "label": "BHA",
+    "category": "Antioxidant",
+    "aliases": [
+      "butylated hydroxyanisole",
+      "ins 320"
+    ],
+    "what": "A synthetic antioxidant that stops fats in food from reacting with oxygen and turning rancid.",
+    "why_used": "Extends shelf life by keeping fats from spoiling.",
+    "health": "Regulatory bodies set strict limits on how much can be used; some people prefer to avoid it as a precaution.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "bht": {
+    "label": "BHT",
+    "category": "Antioxidant",
+    "aliases": [
+      "butylated hydroxytoluene",
+      "ins 321"
+    ],
+    "what": "A synthetic antioxidant, closely related to BHA, used to keep fats from going rancid.",
+    "why_used": "Extends shelf life.",
+    "health": "Used within regulatory limits; some people choose to avoid it as a precaution.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "tbhq": {
+    "label": "TBHQ",
+    "category": "Antioxidant",
+    "aliases": [
+      "ins 319"
+    ],
+    "what": "A synthetic antioxidant added to oils and fried snacks to slow them turning rancid.",
+    "why_used": "Extends the shelf life of oils and fatty foods.",
+    "health": "Used within set regulatory limits; considered one of the additives some shoppers prefer to limit.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "titanium dioxide": {
+    "label": "Titanium Dioxide",
+    "category": "Colour",
+    "aliases": [
+      "ins 171"
+    ],
+    "what": "A bright white mineral pigment used to make foods look whiter or more opaque.",
+    "why_used": "Purely for appearance — it has no taste or nutritional role.",
+    "health": "Banned as a food additive in the EU since 2022 over unresolved safety questions; still permitted in many other countries.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "silicon dioxide": {
+    "label": "Silicon Dioxide",
+    "category": "Food additive",
+    "aliases": [
+      "ins 551",
+      "silica"
+    ],
+    "what": "A fine mineral powder used to stop powdered ingredients clumping together.",
+    "why_used": "Keeps powders like spice mixes or instant soups free-flowing.",
+    "health": "Passes through the body largely unabsorbed. Considered safe at typical food-use levels.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "calcium carbonate": {
+    "label": "Calcium Carbonate",
+    "category": "Food additive",
+    "aliases": [
+      "ins 170",
+      "chalk"
+    ],
+    "what": "A mineral, essentially food-grade chalk, used as a calcium source or acidity regulator.",
+    "why_used": "Fortifies foods with calcium, or controls acidity.",
+    "health": "A source of dietary calcium.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "ferrous sulfate": {
+    "label": "Iron (Ferrous Sulfate)",
+    "category": "Vitamin or mineral",
+    "aliases": [
+      "ferrous fumarate",
+      "iron"
+    ],
+    "what": "An iron compound added to fortify foods, commonly used in flour fortification programmes.",
+    "why_used": "Adds iron to help prevent iron-deficiency anaemia at a population level.",
+    "health": "A dietary mineral. Large excess intake from supplements (not typically from food) can be harmful.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "folic acid": {
+    "label": "Folic Acid",
+    "category": "Vitamin or mineral",
+    "aliases": [
+      "vitamin b9",
+      "folate"
+    ],
+    "what": "The synthetic form of vitamin B9, often added to flour and cereals.",
+    "why_used": "Fortification to help prevent birth defects at a population level.",
+    "health": "An essential vitamin at normal intake levels.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "niacin": {
+    "label": "Niacin",
+    "category": "Vitamin or mineral",
+    "aliases": [
+      "vitamin b3"
+    ],
+    "what": "Vitamin B3, often added to fortify flour and cereal products.",
+    "why_used": "Fortification with an essential vitamin.",
+    "health": "An essential vitamin at normal intake levels.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "vinegar": {
+    "label": "Vinegar",
+    "category": "Acidity regulator",
+    "aliases": [
+      "acetic acid"
+    ],
+    "what": "A sour liquid made by fermenting alcohol into acetic acid.",
+    "why_used": "Adds tang, controls acidity, and helps preserve food.",
+    "health": "A normal food ingredient in the amounts typically used.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "baking powder": {
+    "label": "Baking Powder",
+    "category": "Raising agent",
+    "aliases": [],
+    "what": "A mix of baking soda and a mild acid, which reacts with liquid or heat to release gas bubbles.",
+    "why_used": "Makes baked goods rise without needing yeast.",
+    "health": "A normal food ingredient in the amounts typically used.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "cream of tartar": {
+    "label": "Cream Of Tartar",
+    "category": "Raising agent",
+    "aliases": [
+      "ins 336",
+      "potassium bitartrate"
+    ],
+    "what": "An acidic byproduct of winemaking, used to stabilise whipped egg whites and help baked goods rise.",
+    "why_used": "Stabilises foams and activates baking soda.",
+    "health": "A normal food ingredient in the amounts typically used.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "vanilla": {
+    "label": "Vanilla",
+    "category": "Flavouring",
+    "aliases": [
+      "vanilla extract",
+      "vanillin"
+    ],
+    "what": "A flavouring derived from vanilla pods, or a synthetic version (vanillin) that mimics the same taste.",
+    "why_used": "Adds a warm, sweet aroma and flavour.",
+    "health": "A normal flavouring ingredient.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "cinnamon": {
+    "label": "Cinnamon",
+    "category": "Spice",
+    "aliases": [],
+    "what": "A spice made from the dried inner bark of the cinnamon tree.",
+    "why_used": "Adds a warm, sweet-spicy flavour.",
+    "health": "A normal spice at food-use levels.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "black pepper": {
+    "label": "Black Pepper",
+    "category": "Spice",
+    "aliases": [
+      "pepper"
+    ],
+    "what": "A spice made from dried, unripe peppercorns.",
+    "why_used": "Adds heat and a sharp, warm flavour.",
+    "health": "A normal spice at food-use levels.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "turmeric": {
+    "label": "Turmeric",
+    "category": "Spice",
+    "aliases": [
+      "curcumin"
+    ],
+    "what": "A spice from the root of the turmeric plant, also used as a natural yellow colouring.",
+    "why_used": "Adds colour and an earthy flavour.",
+    "health": "A normal spice at food-use levels.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "garlic powder": {
+    "label": "Garlic Powder",
+    "category": "Spice",
+    "aliases": [
+      "dehydrated garlic"
+    ],
+    "what": "Fresh garlic that has been dried and ground into a powder.",
+    "why_used": "Adds garlic flavour with a longer shelf life than fresh garlic.",
+    "health": "A normal seasoning ingredient.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "onion powder": {
+    "label": "Onion Powder",
+    "category": "Spice",
+    "aliases": [
+      "dehydrated onion"
+    ],
+    "what": "Dried, ground onion, used as a convenient seasoning.",
+    "why_used": "Adds onion flavour without fresh onion's moisture or shelf life.",
+    "health": "A normal seasoning ingredient.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "paprika": {
+    "label": "Paprika",
+    "category": "Spice",
+    "aliases": [],
+    "what": "A spice made from dried, ground sweet or mild peppers.",
+    "why_used": "Adds colour and a mild, sweet pepper flavour.",
+    "health": "A normal spice at food-use levels.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "egg": {
+    "label": "Egg",
+    "category": "Allergen",
+    "aliases": [
+      "whole egg",
+      "egg powder",
+      "dried egg",
+      "albumen",
+      "egg white",
+      "egg yolk"
+    ],
+    "what": "Whole egg, egg white or egg yolk, usually dried into a powder for use in packaged food.",
+    "why_used": "Binds ingredients together and adds structure, richness or a glossy finish.",
+    "health": "A common allergen.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "yeast": {
+    "label": "Yeast",
+    "category": "Raising agent",
+    "aliases": [
+      "baker's yeast",
+      "active dry yeast"
+    ],
+    "what": "A living microorganism that ferments sugars and releases carbon dioxide gas.",
+    "why_used": "Makes bread dough rise.",
+    "health": "A normal ingredient in baked goods.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "malt extract": {
+    "label": "Malt Extract",
+    "category": "Flavouring",
+    "aliases": [],
+    "what": "A thick syrup made by extracting the sugars from sprouted, dried barley.",
+    "why_used": "Adds a toasty, malty sweetness.",
+    "health": "Contains natural sugars, and gluten from the barley.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "beta carotene": {
+    "label": "Beta Carotene",
+    "category": "Colour",
+    "aliases": [
+      "ins 160a"
+    ],
+    "what": "A natural orange-yellow pigment, found in carrots and many other plants, and also converted by the body into vitamin A.",
+    "why_used": "Used as a natural food colouring.",
+    "health": "Generally considered a benign, naturally occurring colouring.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "annatto": {
+    "label": "Annatto",
+    "category": "Colour",
+    "aliases": [
+      "ins 160b"
+    ],
+    "what": "A natural orange-red colouring extracted from the seeds of the achiote tree.",
+    "why_used": "Used as a natural alternative to synthetic colours.",
+    "health": "Rarely, some people report a sensitivity to it.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "sodium nitrite": {
+    "label": "Sodium Nitrite",
+    "category": "Preservative",
+    "aliases": [
+      "ins 250"
+    ],
+    "what": "A preservative used mainly in cured and processed meats to stop bacterial growth and fix a pink colour.",
+    "why_used": "Prevents the growth of bacteria that cause botulism, and cures meat.",
+    "health": "Regulated within strict limits. Frequently discussed in relation to processed-meat consumption.",
+    "quantity": "The exact quantity is not stated on the label."
+  },
+  "calcium propionate": {
+    "label": "Calcium Propionate",
+    "category": "Preservative",
+    "aliases": [
+      "ins 282"
+    ],
+    "what": "A preservative commonly used in bread to stop mould growing.",
+    "why_used": "Extends the shelf life of baked goods.",
+    "health": "Used within regulatory limits; considered low-risk by major food safety bodies.",
+    "quantity": "The exact quantity is not stated on the label."
+  }
+}

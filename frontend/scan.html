@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#17231d">
+<title>FoodLens — Scan a label</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#view-scan">Skip to scanner</a>
+
+<!-- animated background -->
+<div class="bg-frame" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+  <span class="blob blob-d"></span>
+  <div class="produce" id="produceLayer"></div>
+</div>
+
+<div class="app">
+
+  <section id="mainApp" class="main-app">
+
+    <nav class="navbar">
+      <button class="brand brand-btn" id="brandHome" type="button">
+        <span class="lens-mark small" aria-hidden="true">
+          <span class="lens-corner tl"></span>
+          <span class="lens-corner tr"></span>
+          <span class="lens-corner bl"></span>
+          <span class="lens-corner br"></span>
+          <span class="lens-dot"></span>
+        </span>
+        <span class="brand-name">FoodLens</span>
+      </button>
+      <div class="nav-right">
+        <span class="user-pill" id="userPill">—</span>
+        <button class="btn-ghost" id="logoutBtn">Log out</button>
+      </div>
+    </nav>
+
+    <main class="container view" id="view-scan" tabindex="-1">
+
+      <button class="back-link" id="backToDashFromScan" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Dashboard
+      </button>
+
+      <div class="hero" id="scanHero">
+        <h1>Point it. Scan it.<br>Know it.</h1>
+        <p>Upload the back of a package, or scan it live with your camera — FoodLens reads the ingredients and nutrition table and tells you what they actually mean.</p>
+      </div>
+
+      <div class="input-tabs" role="tablist" aria-label="How to add the label" id="inputTabs">
+        <button class="tab-btn active" data-tab="upload" role="tab" id="inTab-upload" aria-controls="inPanel-upload" aria-selected="true">Upload photo</button>
+        <button class="tab-btn" data-tab="scan" role="tab" id="inTab-scan" aria-controls="inPanel-scan" aria-selected="false" tabindex="-1">Scan with camera</button>
+      </div>
+
+      <div class="input-panels" id="inputPanels">
+
+        <div class="input-panel active" data-panel="upload" id="inPanel-upload" role="tabpanel" aria-labelledby="inTab-upload">
+          <label class="dropzone" for="imageInput" id="dropzone">
+            <span class="viewfinder">
+              <span class="vf-corner tl"></span>
+              <span class="vf-corner tr"></span>
+              <span class="vf-corner bl"></span>
+              <span class="vf-corner br"></span>
+              <svg class="vf-icon" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                <path d="M4 16V8a2 2 0 0 1 2-2h2l1.5-2h5L16 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="12.5" r="3.4" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </span>
+            <span class="dz-title">Drop a label photo, or click to browse</span>
+            <span class="dz-sub">JPG, PNG or WEBP — the back-of-pack panel works best</span>
+          </label>
+          <input type="file" id="imageInput" accept="image/*" hidden>
+        </div>
+
+        <div class="input-panel" data-panel="scan" id="inPanel-scan" role="tabpanel" aria-labelledby="inTab-scan">
+
+          <div class="camera-box" id="cameraBox" hidden>
+            <div class="camera-frame" id="cameraFrame">
+              <video id="cameraVideo" playsinline autoplay muted></video>
+              <p class="camera-hint" id="cameraHint"><span class="hint-dot" aria-hidden="true"></span><span id="cameraHintText">Starting camera…</span></p>
+              <button class="icon-btn torch-btn" id="cameraTorchBtn" type="button" aria-pressed="false" aria-label="Turn torch on" hidden>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 3h6l-1 6h-4L9 3Zm1 6-1 4h6l-1-4M10 13l-.5 8h5L14 13" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg>
+              </button>
+              <span class="viewfinder camera-viewfinder" aria-hidden="true">
+                <span class="vf-corner tl"></span>
+                <span class="vf-corner tr"></span>
+                <span class="vf-corner bl"></span>
+                <span class="vf-corner br"></span>
+              </span>
+            </div>
+            <div class="camera-controls">
+              <button class="btn-ghost" id="cameraCancelBtn" type="button">Cancel</button>
+              <button class="camera-shutter" id="cameraShutterBtn" type="button" aria-label="Take photo"></button>
+              <button class="btn-ghost" id="cameraSwitchBtn" type="button" hidden>Switch camera</button>
+            </div>
+          </div>
+
+          <canvas id="cameraCanvas" hidden aria-hidden="true"></canvas>
+
+          <button class="dropzone" id="cameraOpenBtn" type="button">
+            <span class="viewfinder">
+              <span class="vf-corner tl"></span>
+              <span class="vf-corner tr"></span>
+              <span class="vf-corner bl"></span>
+              <span class="vf-corner br"></span>
+              <svg class="vf-icon" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v3M12 3c-3.5 0-6.5 1.4-8.5 3.6M12 3c3.5 0 6.5 1.4 8.5 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <rect x="4" y="9" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="14.5" r="3" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </span>
+            <span class="dz-title" id="cameraOpenTitle">Open your camera</span>
+            <span class="dz-sub" id="cameraOpenSub">Line the label up inside the frame and hold steady</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- shown after a capture or upload, before anything is sent for analysis -->
+      <div class="preview-box" id="previewBox" hidden>
+        <div class="preview-frame" id="previewFrame">
+          <img id="previewImg" alt="The label photo you're about to analyse">
+        </div>
+        <div class="preview-quality" id="previewQuality" hidden></div>
+        <div class="preview-actions" id="previewActions">
+          <button class="btn-primary" id="useBtn" type="button">Use this photo</button>
+          <button class="btn-secondary" id="retakeBtn" type="button">Retake</button>
+        </div>
+      </div>
+
+      <div id="scanStatus" class="scan-status" hidden></div>
+
+      <!-- persistent live regions: screen readers announce text written here -->
+      <div class="sr-only" id="scanLive" aria-live="polite" aria-atomic="true"></div>
+      <div class="sr-only" id="scanAlert" role="alert" aria-atomic="true"></div>
+
+    </main>
+
+  </section>
+
+</div>
+
+<script src="common.js"></script>
+<script src="scan.js"></script>
+</body>
+</html>

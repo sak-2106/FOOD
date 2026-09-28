@@ -1,0 +1,19 @@
+# Secrets
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+backend/venv/
+.venv/
+
+# Local caches / runtime data
+backend/enrich_cache.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

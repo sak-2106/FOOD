@@ -2,7 +2,7 @@ Flask
 Flask-CORS
 pytesseract
 Pillow
-opencv-python
+opencv-python-headless
 numpy
 Werkzeug
 pymongo

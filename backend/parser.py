@@ -19,9 +19,11 @@ import re
 from quality import clean_ingredient_name, presplit_missed_commas
 
 SECTION_END = (
-    r"allergen|contains|storage|best before|net (?:weight|qty|quantity)|"
-    r"nutrition|manufactured|marketed|customer care|fssai|mrp|batch|"
-    r"per\s*100\s*g|serving size|energy\s*\d|approximate value"
+    r"allergen|storage|best before|net (?:weight|qty|quantity)|"
+    r"nutritional\s+information|nutrition\s+facts|"  # more specific than just "nutrition"
+    r"manufactured|marketed|customer care|"
+    r"per\s*100\s*g|serving size|energy\s*\d|approximate value|"
+    r"no\.\s*of\s*serv" 
 )
 
 
